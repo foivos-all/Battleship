@@ -90,6 +90,7 @@ In the Java folder, you can find the Java version of the game, which is as such:
   </ul>
   </ul>
 
+  <br />
   In the C++ folder you can find the corresponding version of the game, written in the C++ programming language, which is as such:
   <ul>
     <li>
