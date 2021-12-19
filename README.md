@@ -40,7 +40,6 @@ In the Java folder, you can find the Java version of the game, which is as such:
   <li><u>Submarine:</u> One of the classes that inherits from Ship. It has an integer variable "size = 3" which indicates the size of the ship. Finally, Ship implements the abstract methods.</li>
   
   <li><u>Destroyer:</u> One of the classes that inherits from Ship. It has an integer variable "size = 2" which indicates the size of the ship. Finally, Ship implements the abstract methods.</li>
-</ul>
 
   <li><u>OversizeException:</u> A class that inherits from the Exception class and has the following methods:</li>
   <ul>
