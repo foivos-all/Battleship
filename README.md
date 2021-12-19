@@ -104,26 +104,21 @@ In the Java folder, you can find the Java version of the game, which is as such:
       </ul>
     </li>
   
-    <li>
-      <u>OverlapTilesException:</u> A class that inherits from the Exception class and has the following methods:
+    <li><u>OverlapTilesException:</u> A class that inherits from the Exception class and has the following methods:</li>
       <ul>
         <li><em>OverlapTilesException: (which is also the constructor):</em> Assigns a message to the variable of the "message" class.</li>
         <li><em>~OverlapTilesException: (which is also a destructor):</em> Destroys the object as soon as it goes out of range. We also added the "virtual" keyword in front of the destroyer to activate the "late-binding" mechanism.</li>
         <li><em>what:</em> A method, which despite its name is a getter method, which returns the message of the class.</li>
       </ul>
-    </li>
   
-    <li>
-      <u>AdjacentTilesException:</u> A class that inherits from the Exception class and has the following methods:
+    <li><u>AdjacentTilesException:</u> A class that inherits from the Exception class and has the following methods:</li>
       <ul>
         <li><em>AdjacentTilesException: (which is also the constructor):</em> Assigns a message to the variable of the "message" class.</li>
         <li><em>~AdjacentTilesException: (which is also a destructor):</em> Destroys the object as soon as it goes out of range. We also added the "virtual" keyword in front of the destroyer to activate the "late-binding" mechanism.</li>
         <li><em>what:</em> A method, which despite its name is a getter method, which returns the message of the class.</li>
       </ul>
-    </li>
-  
-    <li>
-      <u>Ship:</u> An abstract class from which the other types of ships will inherit. Represents the general type of each ship. From this class inherit the classes: "Battleship", "Cruiser" and "Destroyer" and has the following abstract methods:
+
+    <li><u>Ship:</u> An abstract class from which the other types of ships will inherit. Represents the general type of each ship. From this class inherit the classes: "Battleship", "Cruiser" and "Destroyer" and has the following abstract methods:</li>
       <ul>
         <li><em>placeShip:</em> The method that is responsible for placing ships. It takes as arguments a two-position table which is the starting point of the ship, the orientation of the ship and the table on which it will place the ships.</li>
         <li><em>check_boundaries:</em> This method checks if the ship's placement goes out of bounds. It takes as arguments a two-position table which is the starting point of the ship and the orientation of the ship.</li>
@@ -133,7 +128,6 @@ In the Java folder, you can find the Java version of the game, which is as such:
         <li><em>my_check_placement:</em> It does the same job as check_placement, but returns "boolean" so that the ship details can be searched again.</li>
         <li><em>my_check_orientation:</em> It does the same job as check_orientation, but returns "boolean" so that the ship details can be searched again.</li>
       </ul>
-    </li>
   
     <li><u>Battleship:</u> One of the classes that inherits from Ship. It has an integer variable "size = 4" which indicates the size of the ship. Finally, Ship implements the abstract methods.</li>
   
@@ -141,8 +135,7 @@ In the Java folder, you can find the Java version of the game, which is as such:
   
     <li><u>Destroyer:</u> One of the classes he inherits from Ship. It has an integer variable "size = 2" which indicates the size of the ship. Finally, Ship implements the abstract methods.</li>
   
-    <li>
-      <u>Board:</u> The class that represents the 5x5 size table and has these methods:
+    <li><u>Board:</u> The class that represents the 5x5 size table and has these methods:</li>
       <ul>
         <li><em>Board (which is also the constructor):</em> Takes as an argument a two-dimensional "Tile" table which it initializes using the creator of the "Tile" class.</li>
         <li><em>drawboards:</em> Takes as an argument a two-dimensional "Tile" type board. It then prints the table using the "Tile" method of the "Tile" class.</li>
@@ -151,27 +144,20 @@ In the Java folder, you can find the Java version of the game, which is as such:
         <li><em>allShipsSunk:</em> Takes as an argument a two-dimensional "Tile" table and returns "boolean" and checks if all ships have sunk by returning "true" or "false".</li>
         <li><em>setHidden:</em> Takes as an argument a Boolean variable and assigns it to the variable of class "hidden".</li>
       </ul>
-    </li>
   
-    <li>
-      <u>Player:</u> A class that represents each player. It has the following methods:
+    <li><u>Player:</u> A class that represents each player. It has the following methods:</li>
       <ul>
         <li><em>Player (which is also the constructor):</em> Takes as arguments the alphanumeric which is the name of the player. It also initializes the other variables classes to 0.</li>
         <li><em>fire:</em> This method implements the shot made by the player. Initially increases by one the variables of the class "shots" and "tries". Then, using the "getType" and "setType" methods of the "Tile" class, he performs the shot.</li>
         <li><em>getStats:</em> Prints on player statistics.</li>
         <li><em>getTries:</em> Returns the player's tries.</li>
       </ul>
-    </li>
   
-    <li>
-      <u>Game:</u> A class that has only one method:
+    <li><u>Game:</u> A class that has only one method:</li>
       <ul>
         <li><em>getInput:</em> A method that returns the player's shooting point. It takes as an argument a table of 2 positions which it fills with user inputs and then returns it as a pointer (since a pointer is a one-dimensional array).</li>
       </ul>
-    </li>
   
-    <li>
-      <u>Main method:</u> The main method which creates the objects of the game, randomly places the ships of the computer and then asks the player to make his shots until the ships of the computer sink or until he reaches the limit of the shots which is 10. Finally , prints the computer table, its statistics and a corresponding message if the player lost or won.
-    </li>
+    <li><u>Main method:</u> The main method which creates the objects of the game, randomly places the ships of the computer and then asks the player to make his shots until the ships of the computer sink or until he reaches the limit of the shots which is 10. Finally , prints the computer table, its statistics and a corresponding message if the player lost or won.</li>
   </ul>
 </p>
