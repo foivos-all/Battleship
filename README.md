@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/battleship.png" />
+  <img src="images/battleship1.png" />
 </p>
 
 # Battleship
