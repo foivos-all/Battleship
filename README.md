@@ -94,15 +94,14 @@ In the Java folder, you can find the Java version of the game, which is as such:
   In the C++ folder you can find the corresponding version of the game, written in the C++ programming language, which is as such:
   <ul>
     <li>
-      <u>Tile:</u> This class represents each cell. It has an "enum" structure that determines the values that a cell can take ("Sea", "Ship", "Hit", "Miss"). The class also has the following methods:
+      <u>Tile:</u> This class represents each cell. It has an "enum" structure that determines the values that a cell can take ("Sea", "Ship", "Hit", "Miss"). The class also has the following methods:</li>
       <ul>
         <li><em>Tile:</em> the default constructor who takes no argument and simply creates a blank object.</li>
         <li><em>Tile (which is our constructor):</em> This creator takes as arguments two integers that are the coordinates of the cell and its formula. It then assigns them to the variables of the class.</li>
         <li><em>setType:</em> It is a "setter" method that takes a formula as an argument and assigns it to the cell.</li>
         <li><em>getType:</em> It is a "getter" method that returns the cell type.</li>
         <li><em>draw:</em> This method takes as an argument a "boolean" variable which if it has the value "false" prints in the type of each cell (showing where the ships are) otherwise it simply prints the sea, the failures and the inaccuracies.</li>
-      </ul>
-    </li>
+    </ul>
   
     <li><u>OverlapTilesException:</u> A class that inherits from the Exception class and has the following methods:</li>
       <ul>
