@@ -128,10 +128,10 @@ In the C++ folder you can find the corresponding version of the game, written in
   
   <li><u>Battleship:</u> One of the classes that inherits from Ship. It has an integer variable "size = 4" which indicates the size of the ship. Finally, Ship implements the abstract methods.</li>
   
-    <li><u>Cruiser:</u> One of the classes that inherits from Ship. It has an integer variable "size = 3" which indicates the size of the ship. Finally, Ship implements the abstract methods.</li>
+  <li><u>Cruiser:</u> One of the classes that inherits from Ship. It has an integer variable "size = 3" which indicates the size of the ship. Finally, Ship implements the abstract methods.</li>
   
-    <li><u>Destroyer:</u> One of the classes he inherits from Ship. It has an integer variable "size = 2" which indicates the size of the ship. Finally, Ship implements the abstract methods.</li>
-  
+  <li><u>Destroyer:</u> One of the classes that inherits from Ship. It has an integer variable "size = 2" which indicates the size of the ship. Finally, Ship implements the abstract methods.</li>
+    
   <li><u>Board:</u> The class that represents the 5x5 size table and has these methods:</li>
   <ul>
     <li><em>Board (which is also the constructor):</em> Takes as an argument a two-dimensional "Tile" table which it initializes using the creator of the "Tile" class.</li>
