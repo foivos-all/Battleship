@@ -89,7 +89,9 @@ In the Java folder, you can find the Java version of the game, which is as such:
     <li><em>main:</em> The main method. Creates the objects of the game. Then it calls "randomPlace" and if it is "true" it calls the "placeAllShips" of the Board class. If the answer is "false", using the "switch" structure places the ships one by one, taking values from the user using the "getInput" and "getOrientation" methods and calling the "placeShip" of each ship. Then he randomly places the ships on the computer and the game begins, where using a "do-while" shots are fired at the points given by the player and randomly from the computer. The game ends when the shooting limit is exceeded (which is twenty) or if all of a player's ships have sunk. Finally, it displays an appropriate message, as the case may be, and prints the two tables.</li>
   </ul>
   </ul>
-  
+
+<br />
+
 In the C++ folder you can find the corresponding version of the game, written in the C++ programming language, which is as such:
 <ul>
   <li><u>Tile:</u> This class represents each cell. It has an "enum" structure that determines the values that a cell can take ("Sea", "Ship", "Hit", "Miss"). The class also has the following methods:</li>
