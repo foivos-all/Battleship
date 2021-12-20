@@ -90,26 +90,22 @@ In the Java folder, you can find the Java version of the game, which is as such:
   </ul>
   </ul>
   
-  In the Java folder, you can find the Java version of the game, which is as such:
+In the C++ folder you can find the corresponding version of the game, written in the C++ programming language, which is as such:
 <ul>
-  <li><u>Tile:</u> This class represents each cell. It has an "enum" structure that determines the values that a cell can take ("Sea", "Ship", "Hit", "Miss"). The class also has the auxiliary methods:</li>
+  <li><u>Tile:</u> This class represents each cell. It has an "enum" structure that determines the values that a cell can take ("Sea", "Ship", "Hit", "Miss"). The class also has the following methods:</li>
   <ul>
-    <li><em>Tile (which is the constructor):</em> The constructor takes as arguments two integers that are the coordinates of the cell and its formula. It then assigns them to the variables of the class.</li>
+    <li><em>Tile:</em> The default constructor who takes no argument and simply creates a blank object.</li>
+    <li><em>Tile (which is our constructor):</em> This creator takes as arguments two integers that are the coordinates of the cell and its formula. It then assigns them to the variables of the class.</li>
     <li><em>setType:</em> It is a "setter" method that takes a formula as an argument and assigns it to the cell.</li>
     <li><em>getType:</em> It is a "getter" method that returns the cell type.</li>
     <li><em>draw:</em> This method takes as an argument a "boolean" variable which if it has the value "false" prints in the type of each cell (showing where the ships are) otherwise it simply prints the sea, the failures and the inaccuracies.</li>
   </ul>
   
-  <li><u>Ship:</u> An abstract class from which the other types of ships will inherit. Represents the general type of each ship. From this class inherit the classes: "Carrier", "Battleship", "Cruiser", "Submarine" and "Destroyer" and has the following abstract methods:</li>
+  <li><u>OverlapTilesException:</u> A class that inherits from the Exception class and has the following methods:</li>
   <ul>
-    <li><em>placeShip:</em> The method that is responsible for placing ships. It takes as arguments a two-position table which is the starting point of the ship, the orientation of the ship and the table on which it will place the ships.</li>
-    <li><em>check_boundaries:</em> This method checks if the ship's placement goes out of bounds. It takes as arguments a two-position table which is the starting point of the ship and the orientation of the ship.</li>
-    <li><em>check_placement:</em> Checks if there is already another ship where we are going to place a ship. As arguments he takes, a two-position table which is the starting point of the ship, the orientation of the ship and the table on which he will place the ships.</li>
-    <li><em>check_orientation:</em> Checks if there is at least one empty cell between another ship. It takes as arguments a two-position table which is the starting point of the ship, the orientation of the ship and the table on which it will place the ships.</li>
-    <li><em>my_check_boundaries:</em> It does the same job as check_boundaries, but returns "boolean" so that the ship details can be searched again.</li>
-    <li><em>getType:</em> It is a "getter" method that returns the cell type.</li>
-    <li><em>my_check_placement:</em> It does the same job as check_placement, but returns "boolean" so that the ship details can be searched again.</li>
-    <li><em>my_check_orientation:</em> It does the same job as check_orientation, but returns "boolean" so that the ship details can be searched again.</li>
+    <li><em>OverlapTilesException (which is also the constructor):</em> Assigns a message to the variable of the "message" class.</li>
+    <li><em> ~OverlapTilesException (which is also a destructor):</em> Destroys the object as soon as it goes out of range. We also added the "virtual" keyword in front of the destroyer to activate the "late-binding" mechanism.</li>
+    <li><em>what:</em> A method, which despite its name is a getter method, which returns the message of the class.</li>
   </ul>
   
   <li><u>Carrier:</u> One of the classes that inherits from Ship. It has an integer variable "size = 5" which indicates the size of the ship. Finally, Ship implements the abstract methods.</li>
