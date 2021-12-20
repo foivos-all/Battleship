@@ -90,7 +90,6 @@ In the Java folder, you can find the Java version of the game, which is as such:
   </ul>
   </ul>
 
-  <br />
   In the C++ folder you can find the corresponding version of the game, written in the C++ programming language, which is as such:
   <ul>
     <li><u>Tile:</u> This class represents each cell. It has an "enum" structure that determines the values that a cell can take ("Sea", "Ship", "Hit", "Miss"). The class also has the following methods:</li>
